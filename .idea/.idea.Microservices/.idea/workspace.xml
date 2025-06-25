@@ -9,7 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40163efa-d7fb-45f7-9558-2afd681ed956" name="Changes" comment="init" />
+    <list default="true" id="40163efa-d7fb-45f7-9558-2afd681ed956" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway-deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-libreria-deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-libreria-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-libreria-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-seguridad-deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-seguridad-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-seguridad-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlserver-deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlserver-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sqlserver-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservices/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservices/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservices.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Microservices.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servicios.api.Gateway/ocelot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Servicios.api.Gateway/ocelot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "guevararogeljj"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/guevararogeljj/MicroServices.git",
+    "accountId": "199fc442-ab6a-435f-8751-36bf98ef46a2"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Servicios.api.Seguridad/Core/Persistence/SeguridadData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -37,24 +69,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Servicios.api.Gateway.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Servicios.api.Libreria.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.Servicios.api.Seguridad.executor&quot;: &quot;Debug&quot;,
-    &quot;Docker.Servicios.api.Gateway/Dockerfile.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Servicios.api.Gateway.executor": "Debug",
+    ".NET Launch Settings Profile.Servicios.api.Libreria.executor": "Debug",
+    ".NET Launch Settings Profile.Servicios.api.Seguridad.executor": "Debug",
+    "Docker.Servicios.api.Gateway/Dockerfile.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Servicios.api.Gateway">
     <configuration name="Servicios.api.Gateway" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Servicios.api.Gateway/Servicios.api.Gateway.csproj" />
@@ -178,10 +217,10 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
-    <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <configuration name="microservice-libreria-pod.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="compose.yaml" />
+          <option name="sourceFilePath" value="microservice-libreria-pod.yml" />
         </settings>
       </deployment>
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
@@ -201,7 +240,17 @@
       <workItem from="1750803347222" duration="675000" />
       <workItem from="1750805043883" duration="1917000" />
       <workItem from="1750806965958" duration="113000" />
+      <workItem from="1750807124212" duration="14481000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1750807239973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750807239973</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +271,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

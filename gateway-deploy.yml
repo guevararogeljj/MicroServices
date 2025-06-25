@@ -18,8 +18,8 @@ spec:
         app: gateway
         type: microservice
     spec:
-     containers:
-      - name: gateway-app
-#        image: guevararogeljj/servicios.api.gateway:v3.#{Build.BuildId}#
-        ports:
-          - containerPort: 80
+      containers:
+        - name: gateway-app
+          image: guevararogeljj/servicios.api.gateway
+          ports:
+            - containerPort: 80

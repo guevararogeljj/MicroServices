@@ -13,8 +13,9 @@ spec:
       type: microservice
   template:
     metadata:
+      name: microservice-libreria-pod
       labels:
-        app: microservice-libreria-pod
+        app: microservice-libreria
         type: microservice
     spec:
       containers:
@@ -23,6 +24,5 @@ spec:
           ports:
             - containerPort: 80
           env:
-          - name: MongoDb__ConnectionString
-            value: mongodb://root:Ezio3946@mongo-service:27017
-      
+            - name: MongoDb__ConnectionString
+              value: mongodb://vaxidrez:$VaxiDrez2025@mongo-service:27017

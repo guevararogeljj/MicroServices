@@ -1,0 +1,15 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-service
+  labels:
+    app: database
+spec:
+  type: LoadBalancer
+  ports:
+        - port: 27017
+          targetPort: 27017
+          nodePort: 30007
+  selector:
+        app: microservice-libreria
+        name: mongo-pod

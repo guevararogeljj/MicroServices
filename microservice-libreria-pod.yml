@@ -1,0 +1,16 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: microservice-libreria-pod
+  labels:
+    app: microservice-libreria
+    type: microservice
+spec:
+  containers:
+    - name: microservice-libreria-app
+      image: guevararogeljj/servicios.api.libreria:latest
+      ports:
+        - containerPort: 80
+      env:
+        - name: MongoDb__ConnectionString
+          value: mongodb://root:Ezio3946@mongo-service:27017

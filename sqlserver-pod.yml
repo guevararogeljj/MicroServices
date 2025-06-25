@@ -1,0 +1,18 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: mssql-pod
+  labels:
+    app: microservice-seguridad
+    type: database
+spec:
+  containers:
+    - name: mssql
+      image: mcr.microsoft.com/mssql/server:2019-latest
+      ports:
+        - containerPort: 1433
+      env: 
+        - name: ACCEPT_EULA
+          value: "Y"
+        - name: SA_PASSWORD
+          value: "Ezio3946"  # Change this to a strong password

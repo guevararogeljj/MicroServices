@@ -1,0 +1,15 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-libreria-service
+  labels:
+    app: microservice-libreria-service
+    type: microservice
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: microservice-libreria
+    type: microservice

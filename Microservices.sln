@@ -9,9 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.api.Seguridad", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Servicios.api.Gateway", "Servicios.api.Gateway\Servicios.api.Gateway.csproj", "{0414778E-A839-49A4-A79C-E31E23575019}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D5A8787-4C1F-4BAE-900C-18FF9EFC752C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", "{8C8BAC5E-1957-4590-865D-950B108440E6}"
 	ProjectSection(SolutionItems) = preProject
-		compose.yaml = compose.yaml
+		microservice-libreria-pod.yml = microservice-libreria-pod.yml
+		mongo-pod.yml = mongo-pod.yml
+		microservice-seguridad-pod.yml = microservice-seguridad-pod.yml
+		sqlserver-pod.yml = sqlserver-pod.yml
+		microservice-libreria-deploy.yml = microservice-libreria-deploy.yml
+		mongo-deploy.yml = mongo-deploy.yml
+		microservice-seguridad-deploy.yml = microservice-seguridad-deploy.yml
+		sqlserver-deploy.yml = sqlserver-deploy.yml
+		microservice-libreria-service.yml = microservice-libreria-service.yml
+		mongo-service.yml = mongo-service.yml
+		sqlserver-service.yml = sqlserver-service.yml
+		gateway-pod.yml = gateway-pod.yml
+		gateway-service.yml = gateway-service.yml
+		gateway-deploy.yml = gateway-deploy.yml
+		microservice-seguridad-service.yml = microservice-seguridad-service.yml
 	EndProjectSection
 EndProject
 Global

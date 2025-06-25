@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deploy
+  labels:
+    app: microservice-libreria
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-libreria
+      name: mongo-pod
+  template:
+    metadata:
+      name: mongo-pod
+      labels:
+        app: microservice-libreria
+        type: database
+        name: mongo-pod
+    spec:
+      containers:
+        - name: mongo
+          image: mongo:8.0.10
+          command:
+            - /bin/bash
+            - -c
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: "root"
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: "Ezio3946"
+          ports:
+            - containerPort: 27017

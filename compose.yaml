@@ -1,7 +1,0 @@
-﻿services:
-  servicios.api.libreria:
-    image: servicios.api.libreria
-    build:
-      context: .
-      dockerfile: Servicios.api.Libreria/Dockerfile
-
